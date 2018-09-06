@@ -1,5 +1,5 @@
 <p align="center">
-  <img="https://raw.githubusercontent.com/OmarAlkattan/WiFi-Positioning-ESP8266/master/Station/station.jpg" />
+  <img src="https://raw.githubusercontent.com/OmarAlkattan/WiFi-Positioning-ESP8266/master/Station/station.jpg" />
 </p>
 
 There are two main roles that each station performing them sequentially. the first role is sniffing the target mobile device Wi-Fi packets, and the second role is sending the mean rssi value of that packets to the Server.
