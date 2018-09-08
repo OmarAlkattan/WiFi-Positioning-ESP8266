@@ -5,6 +5,7 @@ extern "C" {
 }
 
 #define STATION_ID  1
+#define TIME_INTERVAL 30 //SECOND
 
 uint8_t TARGET[6] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; // Mobile Device MAC
 uint8_t HOTSPOT[6] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00}; //Wlan hotspot MAC
@@ -74,6 +75,6 @@ void loop() {
   digitalWrite(D0, HIGH);
   digitalWrite(D4, HIGH);
   unsigned long Time2 = millis();
-  while((Time2 - Time1) < 30000) { Time2 = millis(); delay(1); }
+  while((Time2 - Time1) < (TIME_INTERVAL*1000)) { Time2 = millis(); delay(1); }
 }
 
